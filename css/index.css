@@ -1,3 +1,258 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+ /* CSS UI-II inline-block source code provided by Allie-Rae used with permission and allowed within guidelines of project*/
+
+body {
+	margin: 0 auto;
+	width: 900px;
+}
+
+a {
+	text-decoration: none;
+	color: lightgrey;
+	font-size: 14px;
+}
+
+nav {
+	/*padding: 40px 0 70px 0;
+	word-spacing: 50px;*/
+	display:flex;
+	justify-content: space-evenly;
+}
+/*
+nav a:first-child {
+	padding-left: 0;
+}*/
+
+.logo {
+/*	display: inline-block;*/
+	padding-left: 120px;
+}
+
+header {
+    text-align: center;
+    display:flex;
+}
+
+h1 {
+	font-size: 75px;
+	margin-top: 60px;
+}
+
+.circleimg {
+    padding-left: 50px;
+    padding-top: 40px;
+
+}
+
+.headerwithbutton {
+	width: 420px;
+
+/*	display: inline-block;*/
+justify-content: center;
+
+}
+
+.right {
+/*	display: inline-block;*/
+	*width: 420px;
+	/*vertical-align: top;*/
+	justify-content: right;
+}
+
+.getstarted {
+	/*display: block;*/
+	background-color: white;
+	font-size: 18px;
+	padding: 3px 45px;
+	text-decoration: none;
+	border: 1px solid black;
+	margin: 0 auto;
+	font-family: 'Titillium Web';
+}
+
+hr {
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 95%;
+	margin: 50px 0 0 0;
+	border: none;
+}
+.fea-abo-container{
+	display:inline-flex;
+}
+.featuresabout {
+/*	display: inline-block;*/
+	width: 420px;
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 17px;
+	display: block;
+	margin: 25px 0;
+}
+.services-container{
+	display:flex;
+}
+.serprovis {
+	/*display: inline-block;*/
+	width: 280px;
+	margin: 5px;
+}
+
+p {
+	line-height: 1.2;
+}
+.contact-container{
+	display:flex;
+}
+
+footer {
+	text-align: center;
+	height: 100px;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.hr2 {
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 95%;
+	margin: 40px 0 0 0;
+	border: none;
+}
+
+address {
+	line-height: 1.2;
+}
+
+/*--services--*/
+
+.p2wrapper {
+	display: flex;
+	flex-direction:row;
+	width: 95%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-self:center;
+	/*align-content: flex-start;*/
+
+}
+
+
+/*.p2wrapper */
+ .p2{
+	box-sizing: border-box;
+	border: 1px solid black;
+	width: 45%;
+	/*height:300px;*/
+	background-color: whitesmoke;
+	/*display: flex-wrap;*/
+	margin: 15px;
+	padding-left: 20px;
+	padding-right: 10px;
+	justify-content: space-between;
+	
+}
+
+.learn {
+	/*display: block;*/
+	background-color: white;
+	font-size: 12px;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 1px solid black;
+	margin: 20px;
+	border-radius: 5px;
+	/*font-family: 'Titillium Web';*/
+}
+	
+.p2bw {
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 width: 95%;
+	 justify-content: space-evenly;
+	 align-self: center;
+     }
+.p2b {
+	margin:20px;
+	width: 45%;
+	
+}
+ul {
+	padding-top:10px;
+	list-style-type: square;
+	padding-left: 25px;
+}
+*/
 
