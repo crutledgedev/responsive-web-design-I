@@ -98,6 +98,7 @@ nav a:first-child {
 header {
     text-align: center;
     display:flex;
+    
 }
 
 h1 {
@@ -121,7 +122,7 @@ justify-content: center;
 
 .right {
 /*	display: inline-block;*/
-	*width: 420px;
+	width: 420px;
 	/*vertical-align: top;*/
 	justify-content: right;
 }
@@ -146,12 +147,17 @@ hr {
 	border: none;
 }
 .fea-abo-container{
-	display:inline-flex;
+    display:inline-flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
 }
 .featuresabout {
 /*	display: inline-block;*/
-	width: 420px;
-	margin-bottom: 40px;
+	width: 45%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    /*padding-right: 3%*/
 }
 
 h2 {
@@ -194,65 +200,59 @@ footer {
 address {
 	line-height: 1.2;
 }
+.midimage{
+    width: 95%;
+}
+/* media querries */
 
-/*--services--*/
 
-.p2wrapper {
-	display: flex;
-	flex-direction:row;
-	width: 95%;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-self:center;
-	/*align-content: flex-start;*/
 
+/*800px*/
+
+@media (max-width: 800px){
+    body{
+        background: grey;
+        width:100%;
+        margin: 0 auto;
+    }
+    
+    .right{
+        display: none;
+    }
+    header{
+        width: 100%;
+        justify-content: center;
+    }
+    .headerwithbutton{
+        width: 100%;
+    }
+    .midimage{
+        width: 95%;   
+    }
+    .middle-image{
+        max-width: 95%;
+        height:auto;
+    }
 }
 
 
-/*.p2wrapper */
- .p2{
-	box-sizing: border-box;
-	border: 1px solid black;
-	width: 45%;
-	/*height:300px;*/
-	background-color: whitesmoke;
-	/*display: flex-wrap;*/
-	margin: 15px;
-	padding-left: 20px;
-	padding-right: 10px;
-	justify-content: space-between;
-	
+
+
+/* 500px*/
+
+@media (max-width: 500px){
+    body{
+        background: palegoldenrod;
+    }
 }
 
-.learn {
-	/*display: block;*/
-	background-color: white;
-	font-size: 12px;
-	padding: 10px 20px;
-	text-decoration: none;
-	border: 1px solid black;
-	margin: 20px;
-	border-radius: 5px;
-	/*font-family: 'Titillium Web';*/
-}
-	
-.p2bw {
-	 display: flex;
-	 flex-direction: row;
-	 flex-wrap: wrap;
-	 width: 95%;
-	 justify-content: space-evenly;
-	 align-self: center;
-     }
-.p2b {
-	margin:20px;
-	width: 45%;
-	
-}
-ul {
-	padding-top:10px;
-	list-style-type: square;
-	padding-left: 25px;
-}
-*/
+
+
+
+
+
+
+
+
+
 
