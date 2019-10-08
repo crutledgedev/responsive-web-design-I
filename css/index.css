@@ -76,24 +76,29 @@ body {
 a {
 	text-decoration: none;
 	color: lightgrey;
-	font-size: 14px;
+    font-size: 14px;
+    word-spacing: 18%;
+    
+}
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3%;
+}
+nav {
+	display:flex;
+    justify-content: space-evenly;
+    width:80%;
 }
 
-nav {
-	/*padding: 40px 0 70px 0;
-	word-spacing: 50px;*/
-	display:flex;
-	justify-content: space-evenly;
-}
-/*
-nav a:first-child {
+/*nav a:first-child {
 	padding-left: 0;
-}*/
+}d
 
 .logo {
-/*	display: inline-block;*/
+/*	display: inline-block;
 	padding-left: 120px;
-}
+}*/
 
 header {
     text-align: center;
@@ -236,6 +241,24 @@ address {
     .middle-image{
         max-width: 95%;
         height:auto;
+    }        
+    
+    .nav-header{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3%;
+        justify-content: center;
+    }
+    nav {
+        display:flex;
+        justify-content: space-evenly;
+        width:100%;
+        padding-top: 3%; 
+    }
+    
+    .logo-header{
+        display: flex;
+        justify-content: center;
     }
 }
 
