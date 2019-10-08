@@ -93,12 +93,8 @@ nav {
 
 /*nav a:first-child {
 	padding-left: 0;
-}d
+}d*/
 
-.logo {
-/*	display: inline-block;
-	padding-left: 120px;
-}*/
 
 header {
     text-align: center;
@@ -120,20 +116,18 @@ h1 {
 .headerwithbutton {
 	width: 420px;
 
-/*	display: inline-block;*/
+
 justify-content: center;
 
 }
 
 .right {
-/*	display: inline-block;*/
-	width: 420px;
-	/*vertical-align: top;*/
+
+	width: 420px;	
 	justify-content: right;
 }
 
-.getstarted {
-	/*display: block;*/
+.getstarted {	
 	background-color: white;
 	font-size: 18px;
 	padding: 3px 45px;
@@ -159,11 +153,9 @@ hr {
     margin: 0 auto;
 }
 .featuresabout {
-/*	display: inline-block;*/
 	width: 48%;
     margin-bottom: 3%;
-    /*padding-left: 2%;*/
-    /*padding-right: 3%*/
+
 }
 
 h2 {
@@ -175,8 +167,7 @@ h2 {
     display:flex;
     flex-direction: row;
 }
-.serprovis {
-	/*display: inline-block;*/
+.serprovis {	
 	width: 100%;
     margin: 0 3% 3% 0 auto;
     padding-right: 1%;
@@ -242,7 +233,7 @@ address {
         max-width: 95%;
         height:auto;
     }        
-    
+    /*navigation*/
     .nav-header{
         display: flex;
         flex-direction: column-reverse;
@@ -260,6 +251,7 @@ address {
         display: flex;
         justify-content: center;
     }
+    /*end navigation*/
 }
 
 
@@ -270,9 +262,10 @@ address {
 @media (max-width: 500px){
     body{
         /*background: palegoldenrod;*/
+        width:100%;
+        margin: 0 auto;
     }
-    .fea-abo-container{
-        /*display: flex;*/
+    .fea-abo-container{        
         flex-direction: column;
     }    
     .featuresabout{
@@ -289,6 +282,37 @@ address {
     .contact-container{
         padding-left: 3%;
     }
+    /*navigation*/
+    .nav-header{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3%;
+        justify-content: center;
+        border-bottom: 1px solid grey;
+        width: 100%;
+    }
+    nav {
+
+        display: inline;
+        text-align: center;
+    }
+    
+    .logo-header{
+        display: flex;
+        justify-content: center;
+    }
+    nav a{
+        display: block;
+        border-top: 1px solid slategray
+        ;
+        padding: 5%;
+        font-size: 20px;
+        
+    }
+    /* end navigation*/
+
+
+
 }
 
 
