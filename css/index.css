@@ -1,3 +1,330 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+ /* CSS UI-II inline-block source code provided by Allie-Rae used with permission and allowed within guidelines of project*/
+
+body {
+	margin: 0 auto;
+	width: 900px;
+}
+
+a {
+	text-decoration: none;
+	color: lightgrey;
+    font-size: 14px;
+    word-spacing: 18%;
+    
+}
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3%;
+}
+nav {
+	display:flex;
+    justify-content: space-evenly;
+    width:80%;
+}
+
+/*nav a:first-child {
+	padding-left: 0;
+}d*/
+
+
+header {
+    text-align: center;
+    display:flex;
+    
+}
+
+h1 {
+	font-size: 75px;
+	margin-top: 60px;
+}
+
+.circleimg {
+    padding-left: 50px;
+    padding-top: 40px;
+
+}
+
+.headerwithbutton {
+	width: 420px;
+
+
+justify-content: center;
+
+}
+
+.right {
+
+	width: 420px;	
+	justify-content: right;
+}
+
+.getstarted {	
+	background-color: white;
+	font-size: 18px;
+	padding: 3px 45px;
+	text-decoration: none;
+	border: 1px solid black;
+	margin: 0 auto;
+	font-family: 'Titillium Web';
+}
+
+hr {
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 95%;
+	margin: 50px 0 0 0;
+	border: none;
+}
+.fea-abo-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+.featuresabout {
+	width: 48%;
+    margin-bottom: 3%;
+
+}
+
+h2 {
+	font-size: 17px;
+	display: block;
+	margin: 25px 0;
+}
+.services-container{
+    display:flex;
+    flex-direction: row;
+}
+.serprovis {	
+	width: 100%;
+    margin: 0 3% 3% 0 auto;
+    padding-right: 1%;
+}
+
+p {
+	line-height: 1.2;
+}
+.contact-container{
+	display:flex;
+}
+
+footer {
+	text-align: center;
+	height: 100px;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.hr2 {
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 95%;
+	margin: 40px 0 0 0;
+	border: none;
+}
+
+address {
+	line-height: 1.2;
+}
+.midimage{
+    width: 100%;
+    margin: 0 auto;
+}
+/* media querries */
+
+
+
+/*800px*/
+
+@media (max-width: 800px){
+    body{
+       /* background: grey;*/
+        width:100%;
+        margin: 0 auto;
+    }
+    
+    .right{
+        display: none;
+    }
+    header{
+        width: 100%;
+        justify-content: center;
+    }
+    .headerwithbutton{
+        width: 100%;
+    }
+    .midimage{
+        width: 95%;   
+    }
+    .middle-image{
+        max-width: 95%;
+        height:auto;
+    }        
+    /*navigation*/
+    .nav-header{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3%;
+        justify-content: center;
+    }
+    nav {
+        display:flex;
+        justify-content: space-evenly;
+        width:100%;
+        padding-top: 3%; 
+    }
+    
+    .logo-header{
+        display: flex;
+        justify-content: center;
+    }
+    /*end navigation*/
+}
+
+
+
+
+/* 500px*/
+
+@media (max-width: 500px){
+    body{
+        /*background: palegoldenrod;*/
+        width:100%;
+        margin: 0 auto;
+    }
+    .fea-abo-container{        
+        flex-direction: column;
+    }    
+    .featuresabout{
+        width: 95%;
+        padding-left: 3%;
+    }
+    .services-container{
+        flex-direction: column;    
+    }
+    .serprovis{
+        width: 95%;
+        padding-left: 3%;
+    }
+    .contact-container{
+        padding-left: 3%;
+    }
+    /*navigation*/
+    .nav-header{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3%;
+        justify-content: center;
+        border-bottom: 1px solid grey;
+        width: 100%;
+    }
+    nav {
+
+        display: inline;
+        text-align: center;
+    }
+    
+    .logo-header{
+        display: flex;
+        justify-content: center;
+    }
+    nav a{
+        display: block;
+        border-top: 1px solid slategray
+        ;
+        padding: 5%;
+        font-size: 20px;
+        
+    }
+    /* end navigation*/
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
